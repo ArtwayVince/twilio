@@ -14,6 +14,7 @@ def botHandler():
     if 'hi' in incoming_message:
         # return a gesture or hello to sender
         msg.body("hello i am Lincoln SmartBot")
+        print("got here")
     if 'quote' in incoming_message:
         r = request.get('http://api.quotable.io/random')
         if r.status.code == 200:
